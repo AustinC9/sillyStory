@@ -30,8 +30,6 @@ function result() {
 
     }
 
-    story.textContent = newStory;
-    story.style.visibility = 'visible';
 
     let newStory = storyText;
     let xItem = randomValueFromArray(insertX);
