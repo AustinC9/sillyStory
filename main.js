@@ -35,7 +35,7 @@ function result() {
 
     let newStory = storyText;
     let xItem = randomValueFromArray(insertX);
-    ley yItem = randomValueFromArray(insertY);
+    let yItem = randomValueFromArray(insertY);
     let zItem = randomValueFromArray(insertZ);
 
     newStory = newStory.replace(':insertx:', xItem);
