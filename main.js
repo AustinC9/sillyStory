@@ -17,38 +17,39 @@ randomize.addEventListener('click', result);
 
 function result() {
 
-  if(customName.value !== '') {
-    let name = customName.value;
+    if (customName.value !== '') {
+        let name = customName.value;
 
-  }
+    }
 
-  if(document.getElementById("uk").checked) {
-    let weight = Math.round(300*.453592) + 'Kilograms';
-    let temperature =  Math.round((94-32)*5 / 9) + 'Celsius';
-    newStory = newStory.replace('94 fahrenheit', temperature);
-    newStory = newstory.replace('300 pounds', weight);
+    if (document.getElementById("uk").checked) {
+        let weight = Math.round(300 * .453592) + 'Kilograms';
+        let temperature = Math.round((94 - 32) * 5 / 9) + 'Celsius';
+        newStory = newStory.replace('94 fahrenheit', temperature);
+        newStory = newstory.replace('300 pounds', weight);
 
-  }
+    }
 
-  story.textContent = ;
-  story.style.visibility = 'visible';
+    story.textContent = ;
+    story.style.visibility = 'visible';
 
-  let newStory = storyText;
-  let xItem = randomValueFromArray(insertX);
-  ley yItem = randomValueFromArray(insertY);
-  let zItem = randomValueFromArray(insertZ);
+    let newStory = storyText;
+    let xItem = randomValueFromArray(insertX);
+    ley yItem = randomValueFromArray(insertY);
+    let zItem = randomValueFromArray(insertZ);
 
-  newStory = newStory.replace(':insertx:',xItem);
-  newStory = newStory.replace(':insertx:',xItem);
-  newStory = newStory.replace(':inserty:',yItem);
-  newStory = newStory.replace(':insertz:',zItem);
+    newStory = newStory.replace(':insertx:', xItem);
+    newStory = newStory.replace(':insertx:', xItem);
+    newStory = newStory.replace(':inserty:', yItem);
+    newStory = newStory.replace(':insertz:', zItem);
 
-  if(customName.value !== '') {
-      const name = customName.value;
-      newStory = newStory.replace('Bob',name);}
+    if (customName.value !== '') {
+        const name = customName.value;
+        newStory = newStory.replace('Bob', name);
+    }
 
-story.textContent = newStory;
-story.style.visibility = 'visible';
-  
+    story.textContent = newStory;
+    story.style.visibility = 'visible';
+
 
 }
