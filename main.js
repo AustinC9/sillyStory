@@ -48,6 +48,7 @@ function result() {
       newStory = newStory.replace('Bob',name);}
 
 story.textContent = newStory;
+story.style.visibility = 'visible';
   
 
 }
