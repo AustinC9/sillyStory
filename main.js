@@ -22,11 +22,11 @@ function result() {
 
     }
 
-    if (document.getElementById("uk").checked) {
+    if(document.getElementById("uk").checked) {
         let weight = Math.round(300 * .453592) + 'Kilograms';
         let temperature = Math.round((94 - 32) * 5 / 9) + 'Celsius';
-        newStory = newStory.replace('94 fahrenheit', temperature);
-        newStory = newstory.replace('300 pounds', weight);
+        newStory = newStory.replace('94 fahrenheit',temperature);
+        newStory = newstory.replace('300 pounds',weight);
 
     }
 
